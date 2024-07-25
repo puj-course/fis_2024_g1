@@ -42,3 +42,6 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 
 ## Instalación y Uso
 1. Clona el repositorio: `git clone` [Repositorio](https://github.com/puj-course/fis_2024_g1.git)  
+
+## `Lean Canvas`  
+### ***Link:*** [Canvas](https://www.canva.com/design/DAGL5-BW-tM/t6wcoT0ZNaTMHwAL7HTbfA/edit?utm_content=DAGL5-BW-tM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
