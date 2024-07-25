@@ -1,4 +1,25 @@
-# fis_2024_g1
+# Sistema de Reservas de Hotel - *Siste Turimos*
+
+<!-- fis_2024_g1 -->
+
+## Descripción
+El Sistema de Reservas de Hotel es una aplicación que permite gestionar las reservas de habitaciones en un hotel.  
+La aplicación facilita el registro de habitaciones, clientes y reservas, así como la consulta de la disponibilidad de habitaciones.  
+Además, ofrece reportes de ocupación y estadísticas del hotel.
+
+## Características
+- **Registro de habitaciones**: Permite agregar, modificar y eliminar habitaciones en el sistema.
+- **Registro de clientes**: Permite agregar, modificar y eliminar información de los clientes.
+- **Gestión de reservas**: Permite crear, modificar y cancelar reservas de habitaciones.
+- **Disponibilidad de habitaciones**: Consulta la disponibilidad de habitaciones en tiempo real.
+- **Reportes de ocupación**: Genera reportes sobre la ocupación de habitaciones.
+- **Estadísticas**: Proporciona estadísticas sobre las reservas y la ocupación del hotel.
+
+## Tecnologías
+- **Java Swing**: Utilizado para la interfaz gráfica de usuario (GUI).
+- **MySQL o PostgreSQL**: Utilizado para la persistencia de datos.
+
+## Estructura de Carpetas
 
 <pre>
 /
@@ -8,11 +29,16 @@
  │       ├── test/
 </pre>
 
-```mermaid
-graph TD;
-    root[/]
-    root --> doc[doc/]
-    root --> src[src/]
-    src --> test[test/]
-    src --> temp[temp/]
-```
+
+### Descripción de las Carpetas
+
+- **doc/**: Contiene la documentación del proyecto.
+
+- **temp/**: Carpeta temporal para archivos temporales.
+  
+- **src/**: Contiene el código fuente y los recursos del proyecto.
+  - **test/**: Contiene las pruebas de la aplicación.
+    
+
+## Instalación y Uso
+1. Clona el repositorio: `git clone` [Repositorio](https://github.com/puj-course/fis_2024_g1.git)  
