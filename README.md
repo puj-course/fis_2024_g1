@@ -1,4 +1,4 @@
-# Sistema de Reservas de Hotel - *Siste Turimos*
+# Sistema de Reservas de Hotel - *Siste Turismo*
 
 <!-- fis_2024_g1 -->
 
