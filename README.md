@@ -45,3 +45,15 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 
 ## `Lean Canvas`  
 ### ***Link:*** [Canvas](https://www.canva.com/design/DAGL5-BW-tM/t6wcoT0ZNaTMHwAL7HTbfA/edit?utm_content=DAGL5-BW-tM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
+
+## Especificacion de funcionalidades
+
+* Reserva(precio, fecha, check in, check out, etc) "Falta especificar mas"
+* Busqueda de hoteles por ciudad/ubicacion
+* Disponibilidad de ocupacion en hoteles
+* Caracteristicas de habitaciones
+* Servicios por GUI
+* (Conexion con base de datos)
+* Proveer diferentes metodos de pago
+* Proveer un espacio para retroalimentacion del hotel y sus habitaciones por parte del usuario
+* Informe de estadisticas (habitaciones mas usadas, comentario postivos/negativos)
