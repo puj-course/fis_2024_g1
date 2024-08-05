@@ -24,7 +24,7 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 <pre>
 /
  ├── doc/
- |── temp/
+ ├── temp/
  ├── src/
  │       ├── test/
 </pre>
