@@ -38,9 +38,24 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
   
 - **src/**: Contiene el código fuente y los recursos del proyecto.
   - **test/**: Contiene las pruebas de la aplicación.
-```
-classDiagram
-Persona -> Perro
+```mermaid
+ classDiagram
+      Hotel --|> Habitaciones
+      Habitaciones --|> Clientes
+      class Duck{
+          +String beakColor
+          +swim()
+          +quack()
+       }
+      class Fish{
+          -int sizeInFeet
+          -canEat()
+      }
+      class Zebra{
+          +bool is_wild
+          +run()
+      }  
+    
 ```
 
 ## Instalación y Uso
