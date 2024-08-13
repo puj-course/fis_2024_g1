@@ -38,7 +38,10 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
   
 - **src/**: Contiene el código fuente y los recursos del proyecto.
   - **test/**: Contiene las pruebas de la aplicación.
-    
+```
+classDiagram
+Persona -> Perro
+```
 
 ## Instalación y Uso
 1. Clona el repositorio: `git clone` [Repositorio](https://github.com/puj-course/fis_2024_g1.git)  
