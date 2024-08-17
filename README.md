@@ -1,13 +1,23 @@
-# Sistema de Reservas de Hotel - *Siste Turismo*
+# *Siste Turismo*
 
 <!-- fis_2024_g1 -->
 
-## Descripción
+## `Indice`
+- [Descripción](#descripcion)
+- [Características](#caracteristicas)
+- [Tecnologías](#tecnologias)
+- [Diagrama Casos de Uso](#diagramaCasosDeUso)
+- [Diagrama de Clases](#diagramaClases)
+- [Instalación y Uso](#instalacionUso)
+- [Especificacion de Funcionalidades](#especificacionFuncionalidades)
+
+
+## Descripción {#descripcion}
 El Sistema de Reservas de Hotel es una aplicación que permite gestionar las reservas de habitaciones en un hotel.  
 La aplicación facilita el registro de habitaciones, clientes y reservas, así como la consulta de la disponibilidad de habitaciones.  
 Además, ofrece reportes de ocupación y estadísticas del hotel.
 
-## Características
+## Características {#caracteristicas}
 - **Registro de habitaciones**: Permite agregar, modificar y eliminar habitaciones en el sistema.
 - **Registro de clientes**: Permite agregar, modificar y eliminar información de los clientes.
 - **Gestión de reservas**: Permite crear, modificar y cancelar reservas de habitaciones.
@@ -15,56 +25,59 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 - **Reportes de ocupación**: Genera reportes sobre la ocupación de habitaciones.
 - **Estadísticas**: Proporciona estadísticas sobre las reservas y la ocupación del hotel.
 
-## Tecnologías
+## Tecnologías {#tecnologias}
 - **Java Swing**: Utilizado para la interfaz gráfica de usuario (GUI).
 - **MySQL o PostgreSQL**: Utilizado para la persistencia de datos.
 
-## Estructura de Carpetas
+## Diagrama de Casos de Uso{#diagramaCasosDeUso}
+![Diagrama Casos de Uso](https://github.com/ErickSalazar07/Web/blob/main/pictures/userCase.png?raw=true)
 
-<pre>
-/
- ├── doc/
- ├── temp/
- ├── src/
- │       ├── test/
-</pre>
+## Diagrama de Clases{#diagramaClases}
 
-
-### Descripción de las Carpetas
-
-- **doc/**: Contiene la documentación del proyecto.
-
-- **temp/**: Carpeta temporal para archivos temporales.
-  
-- **src/**: Contiene el código fuente y los recursos del proyecto.
-  - **test/**: Contiene las pruebas de la aplicación.
 ```mermaid
  classDiagram
-      Hotel --|> Habitaciones
-      Habitaciones --|> Clientes
-      class Duck{
-          +String beakColor
-          +swim()
-          +quack()
-       }
-      class Fish{
-          -int sizeInFeet
-          -canEat()
-      }
-      class Zebra{
-          +bool is_wild
-          +run()
-      }  
+    Hotel --|> Habitacion
+    Hotel --|> BaseDatos
+    Habitacion --|> Cliente
+    Habitacion --|> Pago 
+
+    class Pago{
+        -metodoPago: String 
+    }
+
+    class Habitacion{
+        -id: int
+        -ocupado: bool
+        -fechaInitOcupacion: date
+        -fechaEndOcupacion: date
+        +mostrarCliente(): void
+    }
+    class Hotel{
+        -numHabitaciones: int
+        +mostrarHabitaciones(): void
+    }
+
+    class Cliente{
+        -id: int
+        -correo: String
+        -direccion: String
+        +mostrarInforamcion(): void
+    }  
+
+    class BaseDatos{
+        +conectar(): void
+        +desconectar(): void   
+    }
     
 ```
 
-## Instalación y Uso
+## Instalación y Uso {#instalacionUso}
 1. Clona el repositorio: `git clone` [Repositorio](https://github.com/puj-course/fis_2024_g1.git)  
 
 ## `Lean Canvas`  
 ### ***Link:*** [Canvas](https://www.canva.com/design/DAGL5-BW-tM/t6wcoT0ZNaTMHwAL7HTbfA/edit?utm_content=DAGL5-BW-tM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
 
-## Especificacion de funcionalidades
+## Especificacion de funcionalidades {#especificacionFuncionalidades}
 
 * Reserva(precio, fecha, check in, check out, etc) "Falta especificar mas"
 * Busqueda de hoteles por ciudad/ubicacion
