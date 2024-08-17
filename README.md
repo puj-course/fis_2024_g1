@@ -2,7 +2,7 @@
 
 <!-- fis_2024_g1 -->
 
-## `Indice`
+## `Tabla de Contenidos`
 - [Descripción](#descripcion)
 - [Características](#caracteristicas)
 - [Tecnologías](#tecnologias)
@@ -12,12 +12,12 @@
 - [Especificacion de Funcionalidades](#especificacionFuncionalidades)
 
 
-## Descripción {#descripcion}
+### Descripción {#descripcion}
 El Sistema de Reservas de Hotel es una aplicación que permite gestionar las reservas de habitaciones en un hotel.  
 La aplicación facilita el registro de habitaciones, clientes y reservas, así como la consulta de la disponibilidad de habitaciones.  
 Además, ofrece reportes de ocupación y estadísticas del hotel.
 
-## Características {#caracteristicas}
+### Características {#caracteristicas}
 - **Registro de habitaciones**: Permite agregar, modificar y eliminar habitaciones en el sistema.
 - **Registro de clientes**: Permite agregar, modificar y eliminar información de los clientes.
 - **Gestión de reservas**: Permite crear, modificar y cancelar reservas de habitaciones.
@@ -25,14 +25,14 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 - **Reportes de ocupación**: Genera reportes sobre la ocupación de habitaciones.
 - **Estadísticas**: Proporciona estadísticas sobre las reservas y la ocupación del hotel.
 
-## Tecnologías {#tecnologias}
+### Tecnologías {#tecnologias}
 - **Java Swing**: Utilizado para la interfaz gráfica de usuario (GUI).
 - **MySQL o PostgreSQL**: Utilizado para la persistencia de datos.
 
-## Diagrama de Casos de Uso{#diagramaCasosDeUso}
+### Diagrama de Casos de Uso {#diagramaCasosDeUso}
 ![Diagrama Casos de Uso](https://github.com/ErickSalazar07/Web/blob/main/pictures/userCase.png?raw=true)
 
-## Diagrama de Clases{#diagramaClases}
+### Diagrama de Clases{#diagramaClases}
 
 ```mermaid
  classDiagram
@@ -42,42 +42,42 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
     Habitacion --|> Pago 
 
     class Pago{
-        -metodoPago: String 
+        -String metodoPago
     }
 
     class Habitacion{
-        -id: int
-        -ocupado: bool
-        -fechaInitOcupacion: date
-        -fechaEndOcupacion: date
-        +mostrarCliente(): void
+        -int id
+        -bool ocupado
+        -Date fechaInitOcupacion
+        -Date fechaEndOcupacion
+        +void mostrarCliente()
     }
     class Hotel{
-        -numHabitaciones: int
-        +mostrarHabitaciones(): void
+        -int numHabitaciones
+        +void mostrarHabitaciones()
     }
 
     class Cliente{
-        -id: int
-        -correo: String
-        -direccion: String
-        +mostrarInforamcion(): void
+        -int id
+        -String correo
+        -String direccion
+        +void mostrarInformacion()
     }  
 
     class BaseDatos{
-        +conectar(): void
-        +desconectar(): void   
+        +void conectar()
+        +void desconectar()
     }
     
 ```
 
-## Instalación y Uso {#instalacionUso}
+### Instalación y Uso {#instalacionUso}
 1. Clona el repositorio: `git clone` [Repositorio](https://github.com/puj-course/fis_2024_g1.git)  
 
-## `Lean Canvas`  
+### `Lean Canvas`  
 ### ***Link:*** [Canvas](https://www.canva.com/design/DAGL5-BW-tM/t6wcoT0ZNaTMHwAL7HTbfA/edit?utm_content=DAGL5-BW-tM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
 
-## Especificacion de funcionalidades {#especificacionFuncionalidades}
+### Especificacion de funcionalidades {#especificacionFuncionalidades}
 
 * Reserva(precio, fecha, check in, check out, etc) "Falta especificar mas"
 * Busqueda de hoteles por ciudad/ubicacion
