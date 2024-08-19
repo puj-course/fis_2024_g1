@@ -3,12 +3,12 @@
 <!-- fis_2024_g1 -->
 
 ## `Tabla de Contenidos`
-- [Descripción](#descripcion)
-- [Características](#caracteristicas)
-- [Tecnologías](#tecnologias)
+- [Descripción](#descripción)
+- [Características](#características)
+- [Tecnologías](#tecnologías)
 - [Diagrama Casos de Uso](#diagrama-de-casos-de-uso)
 - [Diagrama de Clases](#diagrama-de-clases)
-- [Instalación y Uso](#instalacion-y-uso)
+- [Instalación y Uso](#instalación-y-uso)
 - [Especificacion de Funcionalidades](#especificacion-de-funcionalidades)
 
 ### Descripción
