@@ -6,18 +6,17 @@
 - [Descripción](#descripcion)
 - [Características](#caracteristicas)
 - [Tecnologías](#tecnologias)
-- [Diagrama Casos de Uso](#diagramaCasosDeUso)
-- [Diagrama de Clases](#diagramaClases)
-- [Instalación y Uso](#instalacionUso)
-- [Especificacion de Funcionalidades](#especificacionFuncionalidades)
+- [Diagrama Casos de Uso](#diagrama-de-casos-de-uso)
+- [Diagrama de Clases](#diagrama-de-clases)
+- [Instalación y Uso](#instalacion-y-uso)
+- [Especificacion de Funcionalidades](#especificacion-de-funcionalidades)
 
-
-### Descripción {#descripcion}
+### Descripción
 El Sistema de Reservas de Hotel es una aplicación que permite gestionar las reservas de habitaciones en un hotel.  
 La aplicación facilita el registro de habitaciones, clientes y reservas, así como la consulta de la disponibilidad de habitaciones.  
 Además, ofrece reportes de ocupación y estadísticas del hotel.
 
-### Características {#caracteristicas}
+### Características
 - **Registro de habitaciones**: Permite agregar, modificar y eliminar habitaciones en el sistema.
 - **Registro de clientes**: Permite agregar, modificar y eliminar información de los clientes.
 - **Gestión de reservas**: Permite crear, modificar y cancelar reservas de habitaciones.
@@ -25,14 +24,14 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 - **Reportes de ocupación**: Genera reportes sobre la ocupación de habitaciones.
 - **Estadísticas**: Proporciona estadísticas sobre las reservas y la ocupación del hotel.
 
-### Tecnologías {#tecnologias}
+### Tecnologías
 - **Java Swing**: Utilizado para la interfaz gráfica de usuario (GUI).
 - **MySQL o PostgreSQL**: Utilizado para la persistencia de datos.
 
-### Diagrama de Casos de Uso {#diagramaCasosDeUso}
+### Diagrama de Casos de Uso
 ![Diagrama Casos de Uso](https://github.com/ErickSalazar07/Web/blob/main/pictures/userCase.png?raw=true)
 
-### Diagrama de Clases{#diagramaClases}
+### Diagrama de Clases
 
 ```mermaid
  classDiagram
@@ -71,13 +70,13 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
     
 ```
 
-### Instalación y Uso {#instalacionUso}
+### Instalación y Uso
 1. Clona el repositorio: `git clone` [Repositorio](https://github.com/puj-course/fis_2024_g1.git)  
 
 ### `Lean Canvas`  
 ### ***Link:*** [Canvas](https://www.canva.com/design/DAGL5-BW-tM/t6wcoT0ZNaTMHwAL7HTbfA/edit?utm_content=DAGL5-BW-tM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
 
-### Especificacion de funcionalidades {#especificacionFuncionalidades}
+### Especificacion de funcionalidades
 
 * Reserva(precio, fecha, check in, check out, etc) "Falta especificar mas"
 * Busqueda de hoteles por ciudad/ubicacion
