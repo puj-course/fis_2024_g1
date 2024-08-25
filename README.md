@@ -8,7 +8,7 @@
 - ### [Tecnologias](#tecnologias "Ir a Tecnologias")
 - ### [Diagrama Casos de Uso](#diagrama-de-casos-de-uso "Ir a Diagrama Casos de Uso")
 - ### [Diagrama de Clases](#diagrama-de-clases "Ir a Diagrama de Clases")
-- ### [Instalacion y Uso](#instalacion-y-uso "Ir a Instalacion y Uso")
+- ### [Instalacion/Uso](#instalacion-y-uso "Ir a Instalacion y Uso")
 - ### [Especificacion de Funcionalidades](#especificacion-de-funcionalidades "Ir a Especificacion de Funcionalidades")
 
 ## Descripcion
@@ -39,10 +39,11 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 
 ```mermaid
  classDiagram
-    Hotel --|> Habitacion
-    Hotel --|> BaseDatos
-    Habitacion --|> Cliente
-    Habitacion --|> Pago 
+    
+    Hotel --> BaseDatos
+    Habitacion --> Cliente
+    Habitacion --> Pago
+    Hotel --> Habitacion
 
     class Pago{
         -String metodoPago
@@ -77,7 +78,43 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 [Volver](#tabla-de-contenidos "Regresar a tabla de contenidos")
 
 ## Instalacion y Uso
-1. Clona el repositorio: `git clone` [Repositorio](https://github.com/puj-course/fis_2024_g1.git)  
+*Debes tener el programa `git` disponible desde tu terminal de comandos, o correr `Git Bash`*  
+1. Posicionate en la ruta del directorio donde quieres copiar el repositorio
+2. Clona el repositorio con el comando git clone y el link del proyecto (puedes copiar el siguiente comando):
+```sh
+ git clone https://github.com/puj-course/fis_2024_g1.git
+```
+3. Ingresa al repositorio con cd:
+```sh
+ cd fis_2024_g1
+```
+4. Da permisos al archivo `deploy.sh` y ejecutalo.
+Los siguientes comandos estan escritos para la linea de comandos en `bash` para un sistema operativo `Linux`. Si se requiere ejecutar en `Windows`, adelante se muestran posibles formas de hacerlo.  
+ * *Linux:*
+ ```sh
+  chmod +x ./scripts/deploy.sh;  ./scripts/deploy.sh
+ ```
+ * *Windows:*  
+   * De manera inicial, se pueden utilizar los comandos de Linux mencionados, ejecutandolos en `Git Bash`
+   * La segunda manera es instalando Windows *Subsystem for Linux* `WSL`
+     <br><br>
+     A. *Instalar:* Abre PowerShell como `administrador` y ejecuta
+       ```sh
+        wsl --install -d Ubuntu
+       ```
+     B. *Ejecuta el comando:* Ejecuta el comando para bash mostrado anteriormente
+     <br><br>
+   * La tercera es usar bash como programa para ejecutar el script
+     ```sh
+      bash scripts/deploy.sh
+     ```
+ <br><br>
+**Imagen de ejemplo:** En la siguiente imagen se muestra el proceso de despliegue y algunas salidas por pantalla si se ingresar determinadas opciones.
+
+No se muestra el procedimiento de `clonacion` del repositorio.  
+<br>
+![Imagen de ejemplo despliegue](https://github.com/ErickSalazar07/Web/blob/main/pictures/ejemploDespliegue.png)
+
 [Volver](#tabla-de-contenidos "Regresar a tabla de contenidos")
 
 ## `Lean Canvas`  
