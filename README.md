@@ -51,12 +51,12 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 <br><br>
 
 ## Diagrama de Arquitectura MVC
-![Diagrama Arquitectura MVC](https://github.com/ErickSalazar07/Web/blob/main/pictures/Arquitectura MVC.jfif?raw=true)
+![Diagrama Arquitectura MVC](https://github.com/ErickSalazar07/Web/blob/main/pictures/ArquitecturaMVC.jfif?raw=true)
 <br><br>
 
 
-## Diagrama de Base de datos
-![Diagrama Base de datos](https://github.com/ErickSalazar07/Web/blob/main/pictures/Base de datos(Entidad Relacion).jfif?raw=true)
+## Diagrama de Base de datos (Entidad Relacion)
+![Diagrama Base de datos](https://github.com/ErickSalazar07/Web/blob/main/pictures/Basededatos.jfif?raw=true)
 <br><br>
 
 <br><br>
