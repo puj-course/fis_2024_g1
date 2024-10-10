@@ -6,8 +6,7 @@
 - ### [Descripcion](#descripcion "Ir a Descripcion")
 - ### [Caracteristicas](#caracteristicas "Ir a Caracteristicas")
 - ### [Tecnologias](#tecnologias "Ir a Tecnologias")
-- ### [Diagrama Casos de Uso](#diagrama-de-casos-de-uso "Ir a Diagrama Casos de Uso")
-- ### [Diagrama Clases](#diagrama-de-clases "Ir a Diagrama de Clases")
+- ### [Diagramas del Sistema](#diagrama-de-casos-de-uso "Ir a Diagrama Casos de Uso")
 - ### [Instalacion/Uso](#instalacion-y-uso "Ir a Instalacion y Uso")
 - ### [Especificacion Funcionalidades](#especificacion-de-funcionalidades "Ir a Especificacion de Funcionalidades")
 
@@ -40,45 +39,26 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 [Volver](#tabla-de-contenidos "Regresar a tabla de contenidos")
 
 ## Diagrama de Clases
+![Diagrama Clases](https://github.com/ErickSalazar07/Web/blob/main/pictures/Clases.jfif?raw=true)
+<br><br>
 
-```mermaid
- classDiagram
-    
-    Hotel --> BaseDatos
-    Habitacion --> Cliente
-    Habitacion --> Pago
-    Hotel --> Habitacion
+## Diagrama de Despliegue
+![Diagrama Despliegue](https://github.com/ErickSalazar07/Web/blob/main/pictures/Despliegue.jfif?raw=true)
+<br><br>
 
-    class Pago{
-        -String metodoPago
-    }
+## Diagrama de Componentes
+![Diagrama Componentes](https://github.com/ErickSalazar07/Web/blob/main/pictures/Componentes.jfif?raw=true)
+<br><br>
 
-    class Habitacion{
-        -int id
-        -bool ocupado
-        -Date fechaInitOcupacion
-        -Date fechaEndOcupacion
-        +void mostrarCliente()
-    }
-    
-    class Hotel{
-        -int numHabitaciones
-        +void mostrarHabitaciones()
-    }
+## Diagrama de Arquitectura MVC
+![Diagrama Arquitectura MVC](https://github.com/ErickSalazar07/Web/blob/main/pictures/ArquitecturaMVC.jfif?raw=true)
+<br><br>
 
-    class Cliente{
-        -int id
-        -String correo
-        -String direccion
-        +void mostrarInformacion()
-    }  
 
-    class BaseDatos{
-        +void conectar()
-        +void desconectar()
-    }
-    
-```
+## Diagrama de Base de datos (Entidad Relacion)
+![Diagrama Base de datos](https://github.com/ErickSalazar07/Web/blob/main/pictures/Basededatos.jfif?raw=true)
+<br><br>
+
 <br><br>
 [Volver](#tabla-de-contenidos "Regresar a tabla de contenidos")
 
