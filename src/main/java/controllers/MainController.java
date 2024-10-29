@@ -2,18 +2,16 @@ package controllers;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 import views.PaginaPrincipal;
 
 public class MainController implements ActionListener{
   static private PaginaPrincipal paginaP;
-  static private CrearUsuarioController crearUsuario;
   public MainController(){
     paginaP = new PaginaPrincipal();
-    crearUsuario = new CrearUsuarioController();
     for(JButton button: paginaP.getButtons())
       button.addActionListener(this);
   }
@@ -23,14 +21,21 @@ public class MainController implements ActionListener{
   }
 
   public void actionPerformed(ActionEvent act){
-    ArrayList<JButton> buttons = paginaP.getButtons();
-      if(act.getSource() == buttons.get(0)){
-        paginaP.desplegarMensaje("Ingresando");
-      }else if(act.getSource() == buttons.get(1)){  
-        crearUsuario.start();
-      }else if(act.getSource() == buttons.get(2)){
-        paginaP.desplegarMensaje("Gracias por usar Siste Turismo");
-        System.exit(0);
+    if(act.getSource() == paginaP.getBtAcceder()){ // boton acceder
+      if(usuarioValido(paginaP.getTxtUsuario().getText(), paginaP.getTxtContrasenha().getPassword())){
+        
       }
+    }else if(act.getSource() == paginaP.getBtRegistrar()){ // boton registrar
+      new CrearUsuarioController().start();
+    }else if(act.getSource() == paginaP.getBtSalir()){ //boton salir
+      System.out.println("Saliendo de SisteTurismo...");
+      System.exit(0);
+    }
+  }
+
+  private boolean usuarioValido(String usuario, char password[]){
+    if(usuario.isEmpty() || password.length == 0) return false;
+    if(!usuario.matches("[a-zA-Z ]+")) return false;
+    return true;
   }
 }
