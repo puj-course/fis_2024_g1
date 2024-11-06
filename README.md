@@ -140,8 +140,7 @@ No se muestra el procedimiento de `clonacion` del repositorio.
 
 ### Usuario
 * Reserva(precio, fecha, check in, check out, etc) "Falta especificar mas"
-* Busqueda de hoteles por ciudad/ubicacion
-* Disponibilidad de ocupacion en hoteles
+* Disponibilidad de ocupacion del hotel
 * Caracteristicas de habitaciones
 * Servicios por GUI
 * (Conexion con base de datos)
