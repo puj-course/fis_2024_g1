@@ -13,4 +13,7 @@ public class Modelo {
     conexionDB.insertClient(cliente.scriptInsertarSQL());
   }
 
+
+
+
 }
