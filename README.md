@@ -39,7 +39,7 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 [Volver](#tabla-de-contenidos "Regresar a tabla de contenidos")
 
 ## Diagrama de Clases
-![Diagrama Clases](https://github.com/ErickSalazar07/Web/blob/main/pictures/Clases.jfif?raw=true)
+![Diagrama Clases](https://github.com/ErickSalazar07/Web/blob/main/pictures/Clases.jpeg?raw=true)
 <br><br>
 
 ## Diagrama de Despliegue

@@ -16,9 +16,9 @@ public class DBConnection {
   private String password;
 
   public DBConnection(){
-    this.url = "jdbc:mysql//127.0.0.1:3306";
+    this.url = "jdbc:mysql//127.0.0.1:3306/datasisteturismo";
     this.username = "root";
-    this.password = "";
+    this.password = "2004";
     try{
       conexion = DriverManager.getConnection(this.url, this.username, this.password);
     }catch(SQLException e){
