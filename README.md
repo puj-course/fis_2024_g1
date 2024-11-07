@@ -21,7 +21,7 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 - **Registro de habitaciones**: Permite agregar, modificar y eliminar habitaciones en el sistema.
 - **Registro de clientes**: Permite agregar, modificar y eliminar información de los clientes.
 - **Gestión de reservas**: Permite crear, modificar y cancelar reservas de habitaciones.
-- **Disponibilidad de habitaciones**: Consulta la disponibilidad de habitaciones en tiempo real.
+- **Disponibilidad de habitaciones**: Consulta la disponibilidad de habitaciones en tiempo real, en base al check-in y check-out.
 - **Reportes de ocupación**: Genera reportes sobre la ocupación de habitaciones.
 - **Estadísticas**: Proporciona estadísticas sobre las reservas y la ocupación del hotel.
 <br><br>
