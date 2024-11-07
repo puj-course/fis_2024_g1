@@ -12,7 +12,7 @@
 
 ## Descripcion
 El Sistema de Reservas de Hotel es una aplicación que permite gestionar las reservas de habitaciones en un hotel.  
-La aplicación facilita el registro de habitaciones, clientes y reservas, así como la consulta de la disponibilidad de habitaciones.  
+La aplicación facilita el registro de habitaciones, clientes y reservas, así como la consulta de la disponibilidad de habitaciones, proporcionando información sobre el check-in y check-out.  
 Además, ofrece reportes de ocupación y estadísticas del hotel.
 <br><br>
 [Volver](#tabla-de-contenidos "Regresar a tabla de contenidos")
@@ -21,7 +21,7 @@ Además, ofrece reportes de ocupación y estadísticas del hotel.
 - **Registro de habitaciones**: Permite agregar, modificar y eliminar habitaciones en el sistema.
 - **Registro de clientes**: Permite agregar, modificar y eliminar información de los clientes.
 - **Gestión de reservas**: Permite crear, modificar y cancelar reservas de habitaciones.
-- **Disponibilidad de habitaciones**: Consulta la disponibilidad de habitaciones en tiempo real.
+- **Disponibilidad de habitaciones**: Consulta la disponibilidad de habitaciones en tiempo real, en base al check-in y check-out.
 - **Reportes de ocupación**: Genera reportes sobre la ocupación de habitaciones.
 - **Estadísticas**: Proporciona estadísticas sobre las reservas y la ocupación del hotel.
 <br><br>
@@ -140,8 +140,7 @@ No se muestra el procedimiento de `clonacion` del repositorio.
 
 ### Usuario
 * Reserva(precio, fecha, check in, check out, etc) "Falta especificar mas"
-* Busqueda de hoteles por ciudad/ubicacion
-* Disponibilidad de ocupacion en hoteles
+* Disponibilidad de ocupacion del hotel
 * Caracteristicas de habitaciones
 * Servicios por GUI
 * (Conexion con base de datos)
